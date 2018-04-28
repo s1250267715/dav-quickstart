@@ -1,0 +1,11 @@
+.a{
+    color: red;
+    &.b{
+        font-size: 30px;
+    }
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
