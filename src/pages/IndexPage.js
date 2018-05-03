@@ -11,6 +11,8 @@ export default class IndexPage extends Component {
     const routers = [
       { path: '/interview', name: 'interview' },
       { path: '/learn-ant', name: 'learn-ant' },
+      { path: '/handling', name: 'handling' },
+      { path: '/todolist', name: 'todoList' },
     ]
     return (
       <div className={styles.normal}>

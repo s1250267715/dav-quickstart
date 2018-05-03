@@ -5,13 +5,18 @@ import stores from './store';
 import IndexPage from './pages/IndexPage';
 import Interview from './pages/interview';
 import LearnAnt from './pages/learn-ant';
+import Handling from './pages/handling';
+import TodoList from './pages/todoList';
 
 function RouterConfig({ history }) {
   const route = [
     { path: '', component: IndexPage },
     { path: 'interview/:age', component: Interview },
-    { path: 'Learn-ant', component: LearnAnt },
+    { path: 'Learn-ant/:id?', component: LearnAnt },
+    { path: 'handling/:id?', component: Handling },
+    { path: 'todoList/:id?', component: TodoList },
   ]
+  console.log('route :', route);
   return (
     <Provider {...stores}>
       <Router history={history}>

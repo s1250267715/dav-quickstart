@@ -1,10 +1,11 @@
 import common from './common';
 import example from './example';
+import todo from './todo';
 
 const stores = {
     common,
-    example
+    example,
+    todo
 }
 
-console.log(stores,'s');
 export default stores

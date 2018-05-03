@@ -3,6 +3,7 @@ import Menu from '../../components/Menu';
 
 export default class extends Component {
     render() {
+        console.log('this.props :', this.props);
         return (
             <div>
                 <h1 style={{ textAlign: 'center', fontSize: '30' }}>初学 ant design</h1>
