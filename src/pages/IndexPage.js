@@ -8,7 +8,6 @@ import { observer, inject } from 'mobx-react';
 export default class IndexPage extends Component {
   render() {
     const { obj } = this.props.common;
-    // 测试
     const routers = [
       { path: '/interview', name: 'interview' },
       { path: '/learn-ant', name: 'learn-ant' },
