@@ -1,0 +1,5 @@
+{
+  "name": "AutoLoader",
+  "private": true,
+  "main": "./index.js"
+}

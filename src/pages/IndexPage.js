@@ -13,6 +13,9 @@ export default class IndexPage extends Component {
       { path: '/learn-ant', name: 'learn-ant' },
       { path: '/handling', name: 'handling' },
       { path: '/todolist', name: 'todoList' },
+      { path: '/tabs', name: 'tabs' },
+      { path: '/autoloader', name: 'autoloader' },
+      { path: '/autoloadermobx', name: 'autoloadermobx' },
     ]
     return (
       <div className={styles.normal}>

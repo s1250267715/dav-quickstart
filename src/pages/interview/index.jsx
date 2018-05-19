@@ -5,15 +5,20 @@ import SButton from '../../components/Button/button';
 import { toJS } from 'mobx';
 import style from './index.scss';
 import classNames from 'classnames/bind';
+import Spin from 'antd/lib/spin'
+import 'antd/lib/spin/style'
 let cx = classNames.bind(style)
 
 @inject('common')
 
 @observer
 export default class extends Component {
+    componentDidMount(){
+        this.props.common.getData()
+    }
     render() {
         console.log(this.props, 'props')
-        let { text, data, getData, changeText } = this.props.common
+        let { text, data, getData, changeText ,loading} = this.props.common
         data = toJS(data)
         return (
             <div>
@@ -33,6 +38,7 @@ export default class extends Component {
                     }
                     ) : <li>暂无数据</li>}
                 </ul>
+                {loading && <Spin />}
             </div>
         )
     }

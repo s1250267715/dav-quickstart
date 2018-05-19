@@ -7,6 +7,11 @@ import Interview from './pages/interview';
 import LearnAnt from './pages/learn-ant';
 import Handling from './pages/handling';
 import TodoList from './pages/todoList';
+import Tabs from './pages/tabs';
+
+import AutoLoaderMock from './components/AutoLoader/AutoLoaderMock';
+import AutoLoaderMockMobx from './components/AutoLoader/AutoLoaderMockMobx';
+
 
 function RouterConfig({ history }) {
   const route = [
@@ -15,6 +20,9 @@ function RouterConfig({ history }) {
     { path: 'Learn-ant/:id?', component: LearnAnt },
     { path: 'handling/:id?', component: Handling },
     { path: 'todoList/:id?', component: TodoList },
+    { path: 'tabs/:id?', component: Tabs },
+    { path: 'autoloader/:id?', component: AutoLoaderMock },
+    { path: 'autoloadermobx/:id?', component: AutoLoaderMockMobx },
   ]
   console.log('route :', route);
   return (
